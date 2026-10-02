@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MARS | Natural Care</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
+            color: #333;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7b2850;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c05a82;
+        }
+
+        /* WELCOME */
+        .hero {
+            background: linear-gradient(135deg, #7b2850, #c05a82);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+            letter-spacing: 8px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 19px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 28px;
+            background: white;
+            color: #7b2850;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #ffeaf2;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #7b2850;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .product {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px #ddd;
+        }
+
+        .product-photo {
+            height: 170px;
+            background: #f8dce7;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7b2850;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product h3 {
+            color: #7b2850;
+            font-size: 22px;
+        }
+
+        /* WHY MARS */
+        .why {
+            background: #f8dce7;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: white;
+            width: 230px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .feature h3 {
+            color: #7b2850;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #7b2850;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 28px;
+            background: white;
+            color: #7b2850;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #4f1833;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why MARS</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- WELCOME -->
+    <header class="hero" id="home">
+
+        <h1>MARS</h1>
+
+        <h2>Welcome to MARS 🌸</h2>
+
+        <p>Natural care, made with love.</p>
+
+        <a href="#products" class="button">
+            Discover Our Products ✨
+        </a>
+
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>About MARS 💕</h2>
+
+        <div class="about">
+
+            <p>
+                Welcome to MARS, a brand created with care, creativity
+                and love. We believe everyday self-care should feel
+                special, simple and beautiful.
+            </p>
+
+            <p>
+                Our goal is to bring carefully made products to you
+                while making your everyday routine more enjoyable.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products">
+
+        <h2>Our Products 🧴</h2>
+
+        <p>Explore our collection of self-care products.</p>
+
+        <div class="products">
+
+            <div class="product">
+
+                <div class="product-photo">
+                    Product Photo
+                </div>
+
+                <h3>Perfume 🌸</h3>
+
+                <p>
+                    Beautiful fragrances for every occasion.
+                </p>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-photo">
+                    Product Photo
+                </div>
+
+                <h3>Shampoo 🫧</h3>
+
+                <p>
+                    A caring addition to your everyday hair routine.
+                </p>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-photo">
+                    Product Photo
+                </div>
+
+                <h3>Face Care ✨</h3>
+
+                <p>
+                    Simple and refreshing everyday care.
+                </p>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-photo">
+                    Product Photo
+                </div>
+
+                <h3>More Coming Soon 🌷</h3>
+
+                <p>
+                    Discover more MARS products soon.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY MARS -->
+    <section class="why" id="why">
+
+        <h2>Why Choose MARS? ✨</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Made With Care</h3>
+                <p>
+                    Every product is created with attention and care.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Beautiful</h3>
+                <p>
+                    Products designed to make your self-care feel special.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Made With Love</h3>
+                <p>
+                    MARS is built with passion and love for our customers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Contact MARS 💌</h2>
+
+        <p>
+            Interested in our products?
+        </p>
+
+        <p>
+            Contact us to know more or place an order.
+        </p>
+
+        <!-- Replace the number later with your business WhatsApp number -->
+        <a
+            class="contact-button"
+            href="https://wa.me/910000000000"
+            target="_blank">
+            Order on WhatsApp 📱
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 MARS. All Rights Reserved.</p>
+
+        <p>Natural care, made with love. 🌸</p>
+
+    </footer>
+
+</body>
+</html>
